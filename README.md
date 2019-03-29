@@ -7,7 +7,9 @@
 
 2、项目中使用摒弃Scoped使用CSS Modules模块化更合理(https://vue-loader.vuejs.org/zh/guide/css-modules.html)
 
-3、封装了部分布局组件(src/components)
+3、封装了部分布局公用组件(src/components)
+
+4、页面都是使用模块化开发形式，当无需页面中某部分功能时移除对应的模块即可
 
 ### src文件夹结构
 * src   - 代码编写的目录（该目录为使用WePY后的开发目录）
