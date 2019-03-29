@@ -1,29 +1,27 @@
-# qinningshejiaoh5
+# SocialAPP
 
-## Project setup
+基于vue-cli3.0构建的一个社交H5平台(自适应方案通过px2rem+lib-flexible自动转换，UI部分使用了mint-ui+colorUi)
+
+## 简介
+
+## 安装下载
+```
+git clone https://github.com/yinMrsir/SocialAPP.git
+```
+
+## 快速使用
+
+### 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+###启动
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
