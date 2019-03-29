@@ -55,3 +55,7 @@ npm run build
 ## 交流 & 提问
 
 https://github.com/yinMrsir/vue-SocialApp/issues
+
+## 关于vue-SocialAPP
+
+对于当前项目只是用于学习交流，当前还在开发阶段，欢迎大家提出宝贵的意见和建议，还有你们的star哦~
