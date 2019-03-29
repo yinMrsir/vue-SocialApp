@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+$defaultColor: #FF4C62;
+
+$solidColor: #e9e9e9;
+
+@mixin flex($direction:column, $inline:block) {
+  display: if($inline==block, flex, inline-flex);
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}

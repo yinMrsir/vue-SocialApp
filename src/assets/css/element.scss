@@ -1,0 +1,40 @@
+@import "./layout.scss";
+
+@mixin btn($size: 32px, $color:#fff, $height:60px, $background:linear-gradient(-81deg,rgba(254,80,80,1),rgba(145,79,254,1)), $radius:30px) {
+  font-size: $size;
+  color: $color;
+  background: $background;
+  border-radius: $radius;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid $background;
+  height: $height;
+  line-height: $height;
+}
+
+@mixin list($direction: column) {
+  @include flex($direction)
+}
+
+@mixin tag($radius:15px, $maginr: 10px){
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 10px 5px;
+  margin-right: 10px;
+  background: #ccc;
+  &:nth-of-type(1) {
+    background: #FC6D7E;
+  }
+  &:nth-of-type(2) {
+    background: #54ACFE;
+  }
+  &:nth-of-type(3) {
+    background: #50D9A0;
+  }
+  &:nth-of-type(4){
+    background: #D078FE;
+  }
+}
