@@ -3,7 +3,7 @@
     <FromGrop v-model="nickname" :options="{
       title: '昵称',
       placeholder: '请输入昵称',
-      textAlign: 'right'
+      textAlign: 'left'
     }"></FromGrop>
     <button @click="submit">提交</button>
   </div>
