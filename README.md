@@ -8,7 +8,7 @@
 
 2、项目中使用摒弃Scoped使用CSS Modules模块化更合理(https://vue-loader.vuejs.org/zh/guide/css-modules.html)
 
-3、封装了部分布局公用组件(src/components)
+3、封装了部分布局公用组件(文档：https://yinmrsir.github.io/vue-sociaApp-doc/index.html)
 
 4、页面都是使用模块化开发形式，当无需页面中某部分功能时移除对应的模块即可
 
