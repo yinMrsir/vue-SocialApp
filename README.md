@@ -1,4 +1,4 @@
-# SocialAPP
+# vue-SocialAPP
 
 基于vue-cli3.0构建的一个社交H5平台(自适应方案通过px2rem+lib-flexible自动转换，UI部分使用了mint-ui+colorUi)
 
