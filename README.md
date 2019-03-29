@@ -36,18 +36,14 @@ git clone https://github.com/yinMrsir/SocialAPP.git
 ```
 
 ## 快速使用
-
-### 安装依赖
 ```
+# --安装依赖
 npm install
-```
-
-### 启动
-```
+# --启动
 npm run serve
-```
-
-### 编译
-```
+# --编译
 npm run build
 ```
+
+## 交流 & 提问
+https://github.com/yinMrsir/vue-SocialApp/issues
