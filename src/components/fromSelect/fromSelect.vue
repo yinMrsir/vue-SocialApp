@@ -64,3 +64,9 @@
     }
   }
 </script>
+
+<style>
+  .picker-item {
+    font-size: 30px;
+  }
+</style>
