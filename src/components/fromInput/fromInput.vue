@@ -1,7 +1,7 @@
 <template>
   <div class="cu-form-group">
     <div class='title'>{{options.title}}</div>
-    <input :placeholder="options.placeholder" :class="[$style.input, 'radius', options.textAlign === 'right' ? $style.textright : '']" v-model="newValue"/>
+    <input :placeholder="options.placeholder || '请输入' + options.title" :class="[$style.input, 'radius', options.textAlign === 'right' ? $style.textright : '']" v-model="newValue"/>
   </div>
 </template>
 
@@ -21,7 +21,7 @@
           return this.value
         },
         set(value) {
-          this.$emit('input', value)
+          this.$emit('change', value)
         }
       }
     }

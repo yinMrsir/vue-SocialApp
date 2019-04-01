@@ -2383,14 +2383,14 @@ button.icon.lg {
   margin: 30px 0 0 !important;
 }
 
-.cu-form-group picker {
+.cu-form-group .pickerbox {
   flex: 1;
   padding-right: 40px;
   overflow: hidden;
   position: relative;
 }
 
-.cu-form-group picker .picker {
+.cu-form-group .pickerbox .picker {
   line-height: 100px;
   font-size: 28px;
   text-overflow: ellipsis;
@@ -2400,7 +2400,7 @@ button.icon.lg {
   text-align: right;
 }
 
-.cu-form-group picker::after {
+.cu-form-group .pickerbox::after {
   font-family: iconfont !important;
   display: block;
   content: "\e6a3";

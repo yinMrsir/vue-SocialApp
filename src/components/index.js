@@ -4,8 +4,11 @@ import GonggeList from './gonggelist/gonggelist.vue'
 import MenuList from './menulist/menulist.vue'
 import Scrolls from './scrolls/scrolls.vue'
 import Silder from './silder/silder.vue'
-import FromGrop from './fromGrop/fromGrop.vue'
 import Loadings from './loadings/loading.vue'
+import FromInput from './fromInput/fromInput.vue'
+import FromSwitch from './fromSwitch/fromSwitch.vue'
+import FromSelect from './fromSelect/fromSelect.vue'
+import BottomModal from './bottomModal/bottomModal.vue'
 
 export {
   Footer,
@@ -14,6 +17,9 @@ export {
   MenuList,
   Scrolls,
   Silder,
-  FromGrop,
-  Loadings
+  FromInput,
+  Loadings,
+  FromSwitch,
+  FromSelect,
+  BottomModal
 }
