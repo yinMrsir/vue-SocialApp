@@ -56,7 +56,7 @@
           {
             flex: 1,
             defaultIndex: 3,
-            values: ['18', '19', '20', '21', '22', '23'],
+            values: ['160', '165', '170', '175', '180', '185以上'],
             textAlign: 'center'
           }
         ],
@@ -65,7 +65,7 @@
           {
             flex: 1,
             defaultIndex: 3,
-            values: ['18', '19', '20', '21', '22', '23'],
+            values: ['45', '46', '47', '48', '49', '50'],
             textAlign: 'center'
           }
         ],
@@ -74,19 +74,19 @@
           {
             flex: 1,
             defaultIndex: 3,
-            values: ['18', '19', '20', '21', '22', '23'],
+            values: ['50', '51', '52', '53', '54', '55'],
             textAlign: 'center'
           },
           {
             flex: 1,
             defaultIndex: 3,
-            values: ['18', '19', '20', '21', '22', '23'],
+            values: ['30', '31', '32', '33', '34', '35'],
             textAlign: 'center'
           },
           {
             flex: 1,
             defaultIndex: 3,
-            values: ['18', '19', '20', '21', '22', '23'],
+            values: ['40', '41', '42', '43', '44', '45'],
             textAlign: 'center'
           }
         ],
@@ -94,7 +94,7 @@
         educationList: [
           {
             flex: 1,
-            defaultIndex: 3,
+            defaultIndex: 1,
             values: [{v: 0, name: '大专'}, {v: 1, name: '本科'}, {v: 2, name: '研究生'}],
             textAlign: 'center'
           }
@@ -104,7 +104,7 @@
           {
             flex: 1,
             defaultIndex: 3,
-            values: ['18', '19', '20', '21', '22', '23'],
+            values: ['1', '2', '3', '4', '5', '6'],
             textAlign: 'center'
           }
         ]

@@ -12,7 +12,7 @@
 
 4、页面都是使用模块化开发形式，当无需页面中某部分功能时移除对应的模块即可
 
-预览地址(建议使用谷歌按F12预览)：https://yinmrsir.github.io/vue-SocialApp/#/
+预览地址(建议使用谷歌按F12预览)：https://yinmrsir.github.io/vue-SocialApp/index.html#/
 
 ### src文件夹结构
 
