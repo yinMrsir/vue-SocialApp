@@ -23,6 +23,12 @@
       placeholder: '仅限3个词，用；隔开',
       textAlign: 'right'
     }"></FromInput>
+    <FromTextArea v-model="say" :options="{
+      title: '媒主说',
+      disabled: false,
+      placeholder: '介绍下自己，让金主更了解你~'
+    }"></FromTextArea>
+    <FromUploadImg></FromUploadImg>
     <div class="padding flex flex-direction">
       <button @click="submit" class="cu-btn bg-red margin-tb-sm lg">提交</button>
     </div>
@@ -30,13 +36,15 @@
 </template>
 
 <script>
-  import {FromInput, FromSwitch, FromSelect} from '@/components'
+  import {FromInput, FromSwitch, FromSelect, FromTextArea, FromUploadImg} from '@/components'
 
   export default {
     components: {
       FromInput,
       FromSwitch,
-      FromSelect
+      FromSelect,
+      FromTextArea,
+      FromUploadImg
     },
     data() {
       return {
@@ -107,7 +115,8 @@
             values: ['1', '2', '3', '4', '5', '6'],
             textAlign: 'center'
           }
-        ]
+        ],
+        say: ''
       }
     },
     methods: {

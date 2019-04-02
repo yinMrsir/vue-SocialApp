@@ -9,6 +9,8 @@ import FromInput from './fromInput/fromInput.vue'
 import FromSwitch from './fromSwitch/fromSwitch.vue'
 import FromSelect from './fromSelect/fromSelect.vue'
 import BottomModal from './bottomModal/bottomModal.vue'
+import FromTextArea from './fromTextArea/fromTextArea.vue'
+import FromUploadImg from './fromUploadImg/fromUploadImg.vue'
 
 export {
   Footer,
@@ -21,5 +23,7 @@ export {
   Loadings,
   FromSwitch,
   FromSelect,
-  BottomModal
+  BottomModal,
+  FromTextArea,
+  FromUploadImg
 }
