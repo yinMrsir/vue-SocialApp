@@ -1,7 +1,9 @@
 <template>
   <div class="cu-form-group">
     <div class='title'>{{options.title}}</div>
-    <input :placeholder="options.placeholder || '请输入' + options.title" :class="[$style.input, 'radius', options.textAlign === 'right' ? $style.textright : '']" v-model="newValue"/>
+    <input type="text" :placeholder="options.placeholder || '请输入' + options.title"
+           :class="[$style.input, 'radius', options.textAlign === 'right' ? $style.textright : '']" v-model="inputValue"
+           @input="updateValue"/>
   </div>
 </template>
 
@@ -15,14 +17,14 @@
         }
       }
     },
-    computed: {
-      newValue: {
-        get() {
-          return this.value
-        },
-        set(value) {
-          this.$emit('change', value)
-        }
+    data() {
+      return {
+        inputValue: ''
+      }
+    },
+    methods: {
+      updateValue() {
+        this.$emit('input', this.inputValue)
       }
     }
   }
@@ -32,7 +34,8 @@
   .input {
     border: 0;
   }
-  .textright{
+
+  .textright {
     text-align: right;
   }
 </style>

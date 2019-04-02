@@ -18,7 +18,7 @@
     <FromSelect v-model="stature" :slots="statureList" title="三围" placeholder="胸围/腰围/臀围"></FromSelect>
     <FromSelect v-model="education" :slots="educationList" title="学历" valueKey="name"></FromSelect>
     <FromSelect v-model="obtain" :slots="obtainList" title="从业年龄"></FromSelect>
-    <FromInput v-model="nickname" :options="{
+    <FromInput v-model="speciality" :options="{
       title: '特长',
       placeholder: '仅限3个词，用；隔开',
       textAlign: 'right'
@@ -28,7 +28,7 @@
       disabled: false,
       placeholder: '介绍下自己，让金主更了解你~'
     }"></FromTextArea>
-    <FromUploadImg></FromUploadImg>
+    <FromUploadImg v-model="imgList" :multiple="true" :max="4"></FromUploadImg>
     <div class="padding flex flex-direction">
       <button @click="submit" class="cu-btn bg-red margin-tb-sm lg">提交</button>
     </div>
@@ -116,7 +116,9 @@
             textAlign: 'center'
           }
         ],
-        say: ''
+        speciality: '',
+        say: '',
+        imgList: []
       }
     },
     methods: {

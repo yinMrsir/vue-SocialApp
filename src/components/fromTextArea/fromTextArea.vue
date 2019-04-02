@@ -1,7 +1,8 @@
 <template>
   <div :class="['cu-form-group top', $style.textareabox]">
     <div class="title" v-if="options.title">{{options.title}}</div>
-    <textarea :placeholder="options.placeholder" maxlength="-1" :disabled="options.disabled"></textarea>
+    <textarea :placeholder="options.placeholder" maxlength="-1" :disabled="options.disabled"  v-model="inputValue"
+              @input="updateValue"></textarea>
   </div>
 </template>
 
@@ -13,6 +14,16 @@
         default() {
           return {}
         }
+      }
+    },
+    data() {
+      return {
+        inputValue: ''
+      }
+    },
+    methods: {
+      updateValue() {
+        this.$emit('input', this.inputValue)
       }
     }
   }
