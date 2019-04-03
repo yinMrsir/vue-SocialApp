@@ -15,9 +15,9 @@ export default {
 ```
 <NavTab
 	:tablist="['关注', '广场', '附近']"
-	:currIndex="currIndex"
 	v-model="currIndex"
-	cname="bg-white">
+	cname="bg-white"
+	:fixed="true">
 </NavTab>
 
 # 父组件可通过监听currIndex执行对应操作
@@ -34,7 +34,7 @@ export default {
 ## 参数
 ```
 tablist: Array  	=> tab数据
-currIndex: Number   => 当前触发的第几项 默认第一项
-v-model: 			同currIndex
+v-model: Number   	=> 当前触发的第几项 默认第一项
 cname: String       => 自定义类名
+fixed: Boolean		=> 是否定位到顶部
 ```

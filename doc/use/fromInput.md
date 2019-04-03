@@ -1,5 +1,7 @@
 # FromInput
 
+表单input组件
+
 ## 引用组件
 ```
 import {FromInput} from '@/components'

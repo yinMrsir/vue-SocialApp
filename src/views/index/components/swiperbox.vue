@@ -2,16 +2,16 @@
   <div class="bg-white">
     <Silder :list="list"></Silder>
     <section :class="[$style.selectbox, 'padding']">
-      <div :class="[$style.item, 'padding-sm']">
+      <router-link to="/belle" :class="[$style.item, 'padding-sm']">
         <h4 class="margin-bottom-xs">我要找助理</h4>
         <p class="margin-bottom-lg">海量助理任您挑选</p>
         <em>立即挑选</em>
-      </div>
-      <div :class="[$style.item, 'padding-sm']" @click="joinHander">
+      </router-link>
+      <a :class="[$style.item, 'padding-sm']" @click="joinHander">
         <h4 class="margin-bottom-xs">我要入驻</h4>
         <p class="margin-bottom-lg">赚钱交友两不误</p>
         <em>立即入驻</em>
-      </div>
+      </a>
     </section>
   </div>
 </template>

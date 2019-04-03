@@ -1,10 +1,13 @@
 <template>
-  <div :class="[$style.navtab, cname]">
-    <ul>
-      <li v-for="(item, index) in tablist" :key="index" :class="currIndex === index ? $style.active : ''"
-          @click="$emit('input', index)">{{item}}
-      </li>
-    </ul>
+  <div>
+    <div :class="[$style.navtab, cname, fixed ? $style.fixed : '']">
+      <ul>
+        <li v-for="(item, index) in tablist" :key="index" :class="$parent.currIndex === index ? $style.active : ''"
+            @click="$emit('input', index)">{{item}}
+        </li>
+      </ul>
+    </div>
+    <div :class="$style.placeholder" v-if="fixed"></div>
   </div>
 </template>
 
@@ -21,9 +24,9 @@
           return []
         }
       },
-      currIndex: {
-        type: Number,
-        default: 0
+      fixed: {
+        type: Boolean,
+        default: false
       }
     }
   }
@@ -31,13 +34,24 @@
 
 <style lang="scss" module>
   @import "../../assets/css/element";
-
+  .fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .placeholder{
+    height: 90px;
+    display: block;
+  }
   .navtab {
     height: 90px;
     border-bottom: $solidColor solid 2px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background: #fff;
+    z-index: 1;
     ul {
       @include list(row);
       li {

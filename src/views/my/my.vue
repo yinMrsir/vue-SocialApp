@@ -20,7 +20,7 @@
     data() {
       return{
         listGg: [
-          {link: '/', icon: require('../../assets/images/my/icon_heart@3x.png'), name: '我的心动', number: '99'},
+          {link: '/heartbeat', icon: require('../../assets/images/my/icon_heart@3x.png'), name: '我的心动', number: '99'},
           {link: '/', icon: require('../../assets/images/my/icon_message_big@3x.png'), name: '我的留言', number: '99'},
           {link: '/', icon: require('../../assets/images/my/icon_moment@3x.png'), name: '我的动态', number: '99'},
           {link: '/', icon: require('../../assets/images/my/icon_focus_h@3x.png'), name: '我的关注', number: '99'}

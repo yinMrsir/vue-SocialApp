@@ -7,4 +7,10 @@
     * [FromInput](doc/use/fromInput.md)
     * [FromSwitch](doc/use/fromSwitch.md)
     * [FromSelect](doc/use/fromSelect.md)
+    * [FromTextArea](doc/use/fromTextArea.md)
+    * [FromUploadImg](doc/use/fromUploadImg.md)
+    * [Silder](doc/use/silder.md)
+    * [MenuList](doc/use/menulist.md)
+    * [GonggeList](doc/use/gonggelist.md)
+    * [Loadings](doc/use/loadings.md)
 

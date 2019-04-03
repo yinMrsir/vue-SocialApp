@@ -1,5 +1,7 @@
 # Footer
 
+页面底部导航
+
 ## 引用组件
 ```
 import {Footer} from '@/components'

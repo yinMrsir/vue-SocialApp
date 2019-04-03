@@ -1,0 +1,49 @@
+@import "../../../assets/css/element";
+
+@mixin item($btnbg:linear-gradient(-81deg,rgba(254,80,80,1),rgba(145,79,254,1))) {
+  @include flex(row);
+  padding: 33px;
+  font-size: 26px;
+  color: #666;
+  background: #fff;
+  .item-left {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    img {
+      width: 80px;
+      height: 80px;
+      background: #ccc;
+    }
+  }
+  .item-center {
+    flex: 1;
+    width: auto;
+    text-align: left;
+    .name {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .sex {
+      color: #999;
+    }
+    .desc {
+      margin-top: 26px;
+    }
+  }
+  .item-right {
+    width: 140px;
+    text-align: center;
+    color: #666;
+    .go {
+      @include btn(32px, #fff, 60px, $btnbg);
+      width: 140px;
+    }
+    .ignore{
+      padding-top: 30px;
+    }
+  }
+}

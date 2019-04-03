@@ -1,5 +1,7 @@
 # FromSelect
 
+表单select组件
+
 ## 引用组件
 ```
 import {FromSelect} from '@/components'
