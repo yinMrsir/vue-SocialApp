@@ -54,7 +54,9 @@ npm run build
 
 ## 交流 & 提问
 
-https://github.com/yinMrsir/vue-SocialApp/issues
+QQ交流群: 411121858
+
+提问：https://github.com/yinMrsir/vue-SocialApp/issues
 
 ## 关于vue-SocialAPP
 
