@@ -48,7 +48,7 @@
     },
     data() {
       return {
-        currIndex: 0,
+        currIndex: 1,
         genList,
         aidList
       }

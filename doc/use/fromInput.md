@@ -27,6 +27,7 @@ export default {
 options = {
 	title: String   				=> 标题
 	placeholder: String 			=> 文本框默认文案
+	disabled: Boolean				=> 是否禁用
 	textAlign: 'left' || 'right'  	=> 文本对齐方式
 }
 ```

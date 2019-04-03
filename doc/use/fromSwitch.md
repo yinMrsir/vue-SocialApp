@@ -34,18 +34,41 @@ export default {
 ```
 
 ## 参数说明
-```
-options = {
-	title: String   						=> 标题
-	defaultValue: String || Number  		=> 默认选中的值
-	list: [
-		name: String						=> 某一项名称
-		value: String || Number 			=> 某一项的值
-		icon： String						=> 未激活图标地址
-		activeIcon： String					=> 激活图标地址
-	]
-}
-```
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th align="left">类型</th>
+      <th>示例</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title</td>
+      <td align="left">String</td>
+      <td>'性别'</td>
+      <td>名称</td>
+    </tr>
+    <tr>
+      <td>defaultValue</td>
+      <td>String || Number</td>
+      <td>1</td>
+      <td>默认选中的值</td>
+    </tr>
+    <tr>
+	  <td>list</td>
+	  <td align="left">Array</td>
+	  <td>
+	  	name: String						=> 名称 <br/>
+		value: String || Number 			=> 值 <br/>
+		icon： String						=> 未激活图标地址 <br/>
+		activeIcon： String					=> 激活图标地址 <br/>
+      </td>
+	  <td>每一项的参数</td>
+	</tr>
+  </tbody>
+</table>
 
 ### demo
 https://yinmrsir.github.io/vue-SocialApp/#/join

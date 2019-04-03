@@ -33,6 +33,9 @@
   .textareabox{
     textarea{
       border: none;
+      &:disabled{
+        background: none;
+      }
     }
   }
 </style>

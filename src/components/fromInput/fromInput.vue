@@ -3,7 +3,7 @@
     <div class='title'>{{options.title}}</div>
     <input type="text" :placeholder="options.placeholder || '请输入' + options.title"
            :class="[$style.input, 'radius', options.textAlign === 'right' ? $style.textright : '']" v-model="inputValue"
-           @input="updateValue"/>
+           @input="updateValue" :disabled="options.disabled"/>
   </div>
 </template>
 
@@ -33,6 +33,9 @@
 <style lang="scss" module>
   .input {
     border: 0;
+    &:disabled{
+      background: none;
+    }
   }
 
   .textright {

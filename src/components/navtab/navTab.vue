@@ -2,8 +2,8 @@
   <div>
     <div :class="[$style.navtab, cname, fixed ? $style.fixed : '']">
       <ul>
-        <li v-for="(item, index) in tablist" :key="index" :class="$parent.currIndex === index ? $style.active : ''"
-            @click="$emit('input', index)">{{item}}
+        <li v-for="(item, index) in tablist" :key="index" :class="currIndex === index ? $style.active : ''"
+            @click="changeTab(index)">{{item}}
         </li>
       </ul>
     </div>
@@ -27,6 +27,26 @@
       fixed: {
         type: Boolean,
         default: false
+      },
+      index: {
+        type: Number,
+        default: 0
+      }
+    },
+    data() {
+      return {
+        currIndex: 0
+      }
+    },
+    methods: {
+      changeTab(index) {
+        this.currIndex = index
+        this.$emit('input', index)
+      }
+    },
+    mounted() {
+      if (this.index) {
+        this.currIndex = this.index
       }
     }
   }
