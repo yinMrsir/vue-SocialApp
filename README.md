@@ -26,9 +26,10 @@
 	* view  			- 页面文件
 		* components 	- 页面公用组件
 	* App.vue
-	* main.js
-	* router.js
-	* store.js
+	* main.js			- 入口文件
+	* permission.js		- 路由守卫权限控制
+	* router.js			- 路由定义
+	* store.js			- vux
 
 ## 安装下载
 
