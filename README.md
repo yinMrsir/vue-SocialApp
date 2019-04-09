@@ -18,29 +18,29 @@
 ```
 ├─ src                                      // 代码编写的目录
 │  ├─ assets                                // 静态文件
-│  │  ├─ css                               	// 公共css
-│  │  └─ images                            	// 图片文件
-│  ├─ components                           	// 公共组件
+│  │  ├─ css                                // 公共css
+│  │  └─ images                             // 图片文件
+│  ├─ components                            // 公共组件(注意此目录的组件保证迁移到其他项目也可以使用)
 │  │  ├─ bottomModal
-│  │  │	 └─ bottomModal.vue					// bottomModal组件
+│  │  │	 └─ bottomModal.vue                 // bottomModal组件
 │  │  └─ index.js                           // 组件集合引用文件
-│  ├─ mock									// 定义模拟目录
-│  │  └─ index.js                          	// 接口模拟入口文件
-│  ├─ view									// 页面文件
+│  ├─ mock                                  // 定义模拟目录
+│  │  └─ index.js                           // 接口模拟入口文件
+│  ├─ view                                  // 页面文件
 │  │  ├─ components                         // 页面公用组件
 │  │  ├─ index
-│  │  │  ├─ components						// index页面组件
-│  │  │  └─ index.vue						// 首页
+│  │  │  ├─ components                      // index页面组件
+│  │  │  └─ index.vue                       // 首页
 │  ├─ router.js                             // 路由定义
 │  ├─ permission.js                         // 路由守卫权限控制
-│  ├─ store.js                             	// vuex配置
-│  ├─ App.vue                              	// 页面入口文件
-│  └─ main.js                              	// 程序入口文件
-├─ .babel.config.js                        	// ES6语法编译配置
-├─ .gitignore                              	// git 忽略项
+│  ├─ store.js                              // vuex配置
+│  ├─ App.vue                               // 页面入口文件
+│  └─ main.js                               // 程序入口文件
+├─ .babel.config.js                         // ES6语法编译配置
+├─ .gitignore                               // git 忽略项
 ├─ .postcssrc.config.js
-├─ README.md                               	// README
-└─ package.json                            	// 配置依赖
+├─ README.md                                // README
+└─ package.json                             // 配置依赖
 ```
 
 ## 安装下载
