@@ -14,22 +14,33 @@
 
 预览地址(建议使用谷歌按F12预览)：https://yinmrsir.github.io/vue-SocialApp/index.html#/
 
-### src文件夹结构
+### 文件夹结构
+├─ src									   	// 代码编写的目录
+│  ├─ assets                               	// 静态文件
+│  │  ├─ css                               	// 公共css
+│  │  └─ images                            	// 图片文件
+│  ├─ components                           	// 公共组件
+│  │  ├─ bottomModal
+│  │  │	 └─ bottomModal.vue					// bottomModal组件
+│  │  └─ index.js                           // 组件集合引用文件
+│  ├─ mock									// 定义模拟目录
+│  │  └─ index.js                          	// 接口模拟入口文件
+│  ├─ view									// 页面文件
+│  │  ├─ components                         // 页面公用组件
+│  │  ├─ index
+│  │  │  ├─ components						// index页面组件
+│  │  │  └─ index.vue						// 首页
+│  ├─ router.js                             // 路由定义
+│  ├─ permission.js                         // 路由守卫权限控制
+│  ├─ store.js                             	// vuex配置
+│  ├─ App.vue                              	// 页面入口文件
+│  └─ main.js                              	// 程序入口文件
+├─ .babel.config.js                        	// ES6语法编译配置
+├─ .gitignore                              	// git 忽略项
+├─ .postcssrc.config.js
+├─ README.md                               	// README
+└─ package.json                            	// 配置依赖
 
-* src   - 代码编写的目录（该目录为使用WePY后的开发目录）
- 	* assets 	 		- 静态文件
-		* images
-		* css
- 	* components 		- 公共组件
-		* index 		- 组件集合引用文件
-	* mock  			- 接口模拟
-	* view  			- 页面文件
-		* components 	- 页面公用组件
-	* App.vue
-	* main.js			- 入口文件
-	* permission.js		- 路由守卫权限控制
-	* router.js			- 路由定义
-	* store.js			- vux
 
 ## 安装下载
 
