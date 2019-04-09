@@ -15,6 +15,7 @@
 预览地址(建议使用谷歌按F12预览)：https://yinmrsir.github.io/vue-SocialApp/index.html#/
 
 ### 文件夹结构
+```
 ├─ src									   	// 代码编写的目录
 │  ├─ assets                               	// 静态文件
 │  │  ├─ css                               	// 公共css
@@ -40,7 +41,7 @@
 ├─ .postcssrc.config.js
 ├─ README.md                               	// README
 └─ package.json                            	// 配置依赖
-
+```
 
 ## 安装下载
 
