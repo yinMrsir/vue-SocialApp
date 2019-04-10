@@ -46,7 +46,7 @@
 ## 安装下载
 
 ```
-git clone https://github.com/yinMrsir/SocialAPP.git
+git clone https://github.com/yinMrsir/vue-SocialApp.git
 ```
 
 ## 快速使用
