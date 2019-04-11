@@ -15,6 +15,10 @@ Vue.use(SwipeItem)
 Vue.use(InfiniteScroll)
 Vue.use(Loadmore)
 
+// 自定义插件
+import {previewImagePlugins} from './plugins'
+Vue.use(previewImagePlugins)
+
 Vue.config.productionTip = false
 new Vue({
   router,

@@ -15,7 +15,7 @@
     </router-link>
     <div :class="$style.textcontent">今晚在魅力四射玩的很嗨。又认识了一群新的朋友，晚上的街舞表演很精彩，2个帅哥哥唱歌非常棒，很喜欢哦。</div>
     <div :class="$style.imglist">
-      <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
+      <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" @click="$previewImage.show()">
       <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
       <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
     </div>
@@ -27,7 +27,6 @@
         <li><span class="icon-forward"></span>66</li>
       </ul>
     </div>
-
   </div>
 </template>
 
