@@ -27,8 +27,15 @@
         <li><span class="icon-forward"></span>66</li>
       </ul>
     </div>
+
   </div>
 </template>
+
+<script>
+  export default {
+    components: {}
+  }
+</script>
 
 <style lang="scss" module>
   @import "../../assets/css/element.scss";

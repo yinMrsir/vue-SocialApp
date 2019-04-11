@@ -29,7 +29,7 @@
           {link: '/', icon: require('../../assets/images/my/icon_counts@2x.png'), name: '我的账户'},
           {link: '/', icon: require('../../assets/images/my/icon_order@2x.png'), name: '我的订单'},
           {link: '/', icon: require('../../assets/images/my/icon_invite@2x.png'), name: '我的邀约'},
-          {link: '/', icon: require('../../assets/images/my/icon_superman@2x.png'), name: '我要做牛人'}
+          {link: '/join', icon: require('../../assets/images/my/icon_superman@2x.png'), name: '我要做牛人'}
         ],
         listTwo: [
           {link: '/', icon: require('../../assets/images/my/icon_share@2x.png'), name: '分享赢金'},

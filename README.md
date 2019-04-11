@@ -20,14 +20,14 @@
 │  ├─ assets                                // 静态文件
 │  │  ├─ css                                // 公共css
 │  │  └─ images                             // 图片文件
-│  ├─ components                            // 公共组件(注意此目录的组件保证迁移到其他项目也可以使用)
+│  ├─ components                            // 公共组件(封装的公共组件并不只限于当前项目使用)
 │  │  ├─ bottomModal
 │  │  │	 └─ bottomModal.vue                 // bottomModal组件
 │  │  └─ index.js                           // 组件集合引用文件
 │  ├─ mock                                  // 定义模拟目录
 │  │  └─ index.js                           // 接口模拟入口文件
 │  ├─ view                                  // 页面文件
-│  │  ├─ components                         // 页面公用组件
+│  │  ├─ components                         // 页面公用组件(只限于当前项目使用)
 │  │  ├─ index
 │  │  │  ├─ components                      // index页面组件
 │  │  │  └─ index.vue                       // 首页
@@ -45,9 +45,7 @@
 
 ## 安装下载
 
-```
-git clone https://github.com/yinMrsir/vue-SocialApp.git
-```
+- 下载地址：https://github.com/yinMrsir/vue-SocialApp/releases
 
 ## 快速使用
 
@@ -73,4 +71,4 @@ QQ交流群: 411121858
 
 ## 关于vue-SocialAPP
 
-对于当前项目只是用于学习交流，当前还在开发阶段，欢迎大家提出宝贵的意见和建议，还有你们的star哦~
+对于当前项目只是用于学习交流，目前很多组件及页面还不够完善，欢迎大家提出宝贵的意见和建议，还有你们的star哦~

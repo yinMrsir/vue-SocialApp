@@ -31,6 +31,7 @@
     position: fixed;
     height: 90px;
     width: 100%;
+    max-width: 750px;
     bottom: 0;
     left: 0;
     background: #fff;

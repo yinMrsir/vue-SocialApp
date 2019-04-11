@@ -59,6 +59,7 @@
     left: 0;
     top: 0;
     width: 100%;
+    max-width: 750px;
   }
   .placeholder{
     height: 90px;

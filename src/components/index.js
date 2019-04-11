@@ -11,6 +11,7 @@ import FromSelect from './fromSelect/fromSelect.vue'
 import BottomModal from './bottomModal/bottomModal.vue'
 import FromTextArea from './fromTextArea/fromTextArea.vue'
 import FromUploadImg from './fromUploadImg/fromUploadImg.vue'
+import PreviewImage from './previewImage/previewImage.vue'
 
 export {
   Footer,
@@ -25,5 +26,6 @@ export {
   FromSelect,
   BottomModal,
   FromTextArea,
-  FromUploadImg
+  FromUploadImg,
+  PreviewImage
 }

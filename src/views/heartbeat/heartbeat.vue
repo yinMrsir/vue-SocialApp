@@ -69,6 +69,7 @@
   .scrollbox {
     position: fixed;
     width: 100%;
+    max-width: 750px;
     overflow-y: auto;
     top: 90px;
     bottom: 0;
