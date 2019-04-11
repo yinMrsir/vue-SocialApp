@@ -15,8 +15,10 @@ export default {
     $vm.show = false
     
     let previewImage = {
-      show() {
+      show(options) {
         $vm.show = true
+        $vm.defaultIndex = options.index
+        $vm.imgs = options.urls
       },
       hide() {
         $vm.show = false

@@ -1,15 +1,10 @@
 <template>
-  <div :class="[$style.previewimg,'cu-modal', show ? 'show' : '']">
+  <div :class="[$style.previewimg,'cu-modal', show ? 'show' : '']" @click="hide">
     <div :class="$style.box">
-      <mt-swipe :auto="4000">
-        <mt-swipe-item :class="$style.item">
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex">
-        </mt-swipe-item>
-        <mt-swipe-item :class="$style.item">
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex">
-        </mt-swipe-item>
-        <mt-swipe-item :class="$style.item">
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex">
+      <mt-swipe :auto="0" :show-indicators="false" :defaultIndex="defaultIndex">
+        <mt-swipe-item v-for="(item, index) in imgs" :key="index">
+          <div :class="$style.item"
+               :style="'background: url('+item+') no-repeat center center; background-size:100% auto;'"></div>
         </mt-swipe-item>
       </mt-swipe>
     </div>
@@ -19,22 +14,40 @@
 <script>
   export default {
     props: {
-      show: Boolean
+      show: Boolean,
+      imgs: {
+        type: Array,
+        default() {
+          return []
+        }
+      },
+      defaultIndex: {
+        type: Number,
+        default: 0
+      }
+    },
+    methods: {
+      hide() {
+        this.imgs = []
+        this.defaultIndex = 0
+        this.show = false
+      }
     }
   }
 </script>
 
 <style lang="scss" module>
   .previewimg {
+    background: rgba(0,0,0,0.9);
     &:before {
       display: none;
     }
     .box {
       height: 100%;
       width: 100%;
-      .item{
-        display: flex;
-        align-items: center;
+      .item {
+        height: 100%;
+        width: 100%;
       }
     }
   }
