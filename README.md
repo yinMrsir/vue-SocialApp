@@ -28,8 +28,8 @@
 │  │  └─ index.js                           // 组件集合引用文件
 │  ├─ mock                                  // 定义模拟目录
 │  │  └─ index.js                           // 接口模拟入口文件
-│  ├─ plugins								// 自定义插件
-│  │  ├─ previewImagePlugins.js				// 图片预览插件
+│  ├─ plugins                               // 自定义插件
+│  │  ├─ previewImagePlugins.js             // 图片预览插件
 │  │  └─ index.js                           // 插件入口文件
 │  ├─ view                                  // 页面文件
 │  │  ├─ components                         // 页面公用组件(只限于当前项目使用)
