@@ -4,18 +4,18 @@
       <img src="" alt="">
       <div :class="[$style.right, 'justify-center padding-top-xs padding-bottom-xs']">
         <div :class="$style.namebox">
-          <h2>许惠纶</h2>
+          <h2>{{item.userName}}</h2>
           <span>19:37</span>
         </div>
         <div :class="$style.info">
-          <span>女 | 20岁</span>
+          <span>女 | {{item.age}}岁</span>
           <span>4.3km</span>
         </div>
       </div>
     </router-link>
-    <div :class="$style.textcontent">今晚在魅力四射玩的很嗨。又认识了一群新的朋友，晚上的街舞表演很精彩，2个帅哥哥唱歌非常棒，很喜欢哦。</div>
+    <div :class="$style.textcontent">{{item.info}}</div>
     <div :class="$style.imglist">
-      <div :style="'background: url('+item+') no-repeat center; background-size: cover;'" v-for="(item,index) in imgs" :key="item" @click="previewImage(index)"></div>
+      <div :style="'background: url('+item+') no-repeat center; background-size: cover;'" v-for="(item,index) in item.imgs" :key="item" @click="previewImage(index)"></div>
     </div>
     <div :class="$style.itemfooter">
       <ul>
@@ -30,21 +30,20 @@
 
 <script>
   export default {
-    components: {},
-    data() {
-      return {
-        imgs: [
-          'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554998900217&di=7dd1a898bad4ccd2cce5c7b55a66fdfe&imgtype=0&src=http%3A%2F%2Fs11.sinaimg.cn%2Fmw690%2F006hikKrzy7slvzPwSKba%26690',
-          'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554998817917&di=38dc414c2cd8fcd66e03f19919e338ae&imgtype=0&src=http%3A%2F%2Fpic31.nipic.com%2F20130727%2F7447430_083053046000_2.jpg',
-          'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554998796006&di=742a97f66620080768857bb9b451a853&imgtype=0&src=http%3A%2F%2Fpic30.nipic.com%2F20130624%2F7447430_092006823000_2.jpg'
-        ]
+    props: {
+      item: {
+        type: Object,
+        default() {
+          return {}
+        }
       }
     },
+    components: {},
     methods: {
       previewImage(index) {
         this.$previewImage.show({
           index,
-          urls: this.imgs
+          urls: this.item.imgs
         })
       }
     }
@@ -96,8 +95,9 @@
     }
     .imglist {
       @include list(row);
-      justify-content: center;
+      justify-content: start;
       padding-top: 20px;
+      padding-left: 30px;
       >div {
         width: 220px;
         height: 180px;

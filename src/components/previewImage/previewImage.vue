@@ -1,6 +1,6 @@
 <template>
   <div :class="[$style.previewimg,'cu-modal', show ? 'show' : '']" @click="hide">
-    <div :class="$style.box">
+    <div :class="$style.box" v-if="show">
       <mt-swipe :auto="0" :show-indicators="false" :defaultIndex="defaultIndex">
         <mt-swipe-item v-for="(item, index) in imgs" :key="index">
           <div :class="$style.item"
@@ -28,9 +28,9 @@
     },
     methods: {
       hide() {
+        this.show = false
         this.imgs = []
         this.defaultIndex = 0
-        this.show = false
       }
     }
   }

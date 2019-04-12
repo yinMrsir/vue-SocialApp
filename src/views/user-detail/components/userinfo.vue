@@ -10,8 +10,8 @@
         </div>
         <div :class="$style.info">热情开朗，待人友好，善于与人沟通</div>
       </div>
-      <div :class="$style.attention">
-        <img src="../../../assets/images/my/icon_focus_n@3x.png" alt="">
+      <div :class="$style.attention" @click="bindAttenHander">
+        <img :src="isAtten ? require('../../../assets/images/my/icon_focus_h@3x.png') : require('../../../assets/images/my/icon_focus_n@3x.png')" alt="">
         <p>关注</p>
       </div>
     </div>
@@ -28,6 +28,21 @@
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        isAtten: false
+      }
+    },
+    methods: {
+      bindAttenHander() {
+        this.isAtten = !this.isAtten
+      }
+    }
+  }
+</script>
 
 <style lang="scss" module>
   @import "../../../assets/css/element";

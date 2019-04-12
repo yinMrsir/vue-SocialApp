@@ -3,26 +3,14 @@
     <div :class="$style.itemtop">
       <img src="../../assets/images/icon_activity.png" alt="">
       <div>
-        <h3>许惠纶正在拼单,去找她一起嗨吧</h3>
+        <h3>{{item.userName}}正在拼单,去找她一起嗨吧</h3>
         <p>仅剩10个名额，今晚22:00结束</p>
       </div>
     </div>
     <div :class="$style.itembottom">
       <ul>
-        <li>
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
-        </li>
-        <li>
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
-        </li>
-        <li>
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
-        </li>
-        <li>
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
-        </li>
-        <li>
-          <img src="https://image-static.segmentfault.com/196/845/1968451495-5c942d7638da6_articlex" alt="">
+        <li v-for="(item1, index1) in item.imgs" :key="index1">
+          <img :src="item1" alt="">
         </li>
       </ul>
       <div :class="$style.btn">立即加入</div>
@@ -36,6 +24,12 @@
       cname: {
         type: String,
         default: ''
+      },
+      item: {
+        type: Object,
+        default() {
+          return {}
+        }
       }
     }
   }
