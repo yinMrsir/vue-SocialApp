@@ -9,6 +9,7 @@
     * [FromSelect](doc/use/fromSelect.md)
     * [FromTextArea](doc/use/fromTextArea.md)
     * [FromUploadImg](doc/use/fromUploadImg.md)
+    * [previewImagePlugins](doc/use/previewImagePlugins.md)
     * [Silder](doc/use/silder.md)
     * [MenuList](doc/use/menulist.md)
     * [GonggeList](doc/use/gonggelist.md)
