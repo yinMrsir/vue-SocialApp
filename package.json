@@ -29,7 +29,7 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "mockjs": "^1.0.1-beta3",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "postcss-px-to-viewport": "^1.1.0",
     "pug-html-loader": "^1.1.5",
     "pug-plain-loader": "^1.0.0",
