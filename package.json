@@ -11,7 +11,7 @@
     "cbook": "node build/copybook.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
     "postcss-px2rem": "^0.3.0",
